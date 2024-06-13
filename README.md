@@ -7,8 +7,6 @@
 
 ### Extra exercises!
 
-A database of extra exercises for you to practise.
-
 |Regex | Solution |
 | --- | --- |
 | [Find a string](https://www.hackerrank.com/challenges/find-a-string/problem) | [Solution](https://github.com/fbw-p24-e01-assignments/tutoring/blob/main/extra_exercises/solution_find_a_string.py) |
