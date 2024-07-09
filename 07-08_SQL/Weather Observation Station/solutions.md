@@ -66,15 +66,13 @@ WHERE country SIMILAR TO '[^AaEeIiOoUu]%[^AaEeIiOoUu]';
 ### Task 7
 
 ```sql {"id":"01J265M8T9HKE6D7HYCAJJKXM5"}
-SELECT city, LENGTH(city) AS len
-FROM (SELECT city, LENGTH(city) AS len
+(SELECT city, LENGTH(city) AS len
 FROM location
 ORDER BY LENGTH(city) ASC, city ASC
-LIMIT 1) AS shortest
+LIMIT 1)
 UNION ALL
-SELECT city, LENGTH(city) AS len
-FROM (SELECT city, LENGTH(city) AS len
+(SELECT city, LENGTH(city) AS len
 FROM location
 ORDER BY LENGTH(city) DESC, city ASC
-LIMIT 1) AS longest;
+LIMIT 1);
 ```
