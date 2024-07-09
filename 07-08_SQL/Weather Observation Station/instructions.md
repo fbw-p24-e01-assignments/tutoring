@@ -32,13 +32,14 @@ Query the list of `city` names starting with vowels (i.e., a, e, i, o, or u) and
 
 The result should look like this:
 
-><pre>   city  |  country
->---------+------------
+> 
+>
+> <pre>   city  |  country
+> ---------+------------
 > Al Fiyay | UAE
 > Anadia   | Bulgaria
 > Ogusu    | Japan
 > Ozhet    | Kazakhstan
->(4 rows)</pre>
 
 Original exercise [here](https://www.hackerrank.com/challenges/weather-observation-station-6/problem?isFullScreen=true).
 
@@ -48,11 +49,12 @@ Query the list of `city` names from `location` which have vowels (i.e., a, e, i,
 
 Your result should look like this:
 
-><pre>  city  
->--------
+> 
+>
+> <pre>  city  
+> --------
 > Anadia
 > Ogusu
->(2 rows)</pre>
 
 Original exercise [here](https://www.hackerrank.com/challenges/weather-observation-station-8/problem?isFullScreen=true).
 
@@ -64,18 +66,24 @@ Query the list of `city` names from `location` that do not start with vowels. Yo
 
 Original exercise [here](https://www.hackerrank.com/challenges/weather-observation-station-9/problem?isFullScreen=true).
 
-### Task 6: Shortest and longest names
+### Task 6: Cities that start and end in consonants in countries that start and end in consonants
+
+Query all columns from `location` that have both `city` and `country` names that start and end in consonants. You are not allowed to use the `AND` operator.
+
+*Hint: research `INTERSECT`*
+
+### Task 7: Shortest and longest names
 
 Query the two cities in `location` with the shortest and longest `city` names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
 
 Your result should look like this:
 
-><pre>     city     | len 
->--------------+-----
+> 
+>
+> <pre>     city     | len 
+> --------------+-----
 > Bonn          |   4
 > Jebel Jelloud |  13
->(2 rows)</pre>
-
 
 *Hint: research `UNION`*
 

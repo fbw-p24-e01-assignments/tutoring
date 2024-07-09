@@ -20,7 +20,7 @@ FROM location;
 Solution 1:
 
 ```sql {"id":"01J267S81DQ9NQ2R8W3B9FDV64"}
-SELECT city, country FROM location
+SELECT DISTINCT city, country FROM location
 WHERE city ILIKE 'a%'
     OR city ILIKE 'e%'
     OR city ILIKE 'i%'
@@ -31,7 +31,7 @@ WHERE city ILIKE 'a%'
 Solution 2:
 
 ```sql {"id":"01J269N7METJ8STF77EP34X3K0"}
-SELECT city, country FROM location
+SELECT DISTINCT city, country FROM location
 WHERE city
 SIMILAR TO '[AaEeIiOoUu]%';
 ```
@@ -54,6 +54,16 @@ WHERE city SIMILAR TO '[AaEeIiOoUu]%';
 ```
 
 ### Task 6
+
+```sql {"id":"01J2B92PCEDMDAACJ97929XD6T"}
+SELECT * FROM location
+WHERE city SIMILAR TO '[^AaEeIiOoUu]%[^AaEeIiOoUu]'
+INTERSECT ALL
+SELECT * FROM location
+WHERE country SIMILAR TO '[^AaEeIiOoUu]%[^AaEeIiOoUu]';
+```
+
+### Task 7
 
 ```sql {"id":"01J265M8T9HKE6D7HYCAJJKXM5"}
 SELECT city, LENGTH(city) AS len
