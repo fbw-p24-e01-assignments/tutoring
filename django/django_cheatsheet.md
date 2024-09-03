@@ -27,3 +27,9 @@ NB: This file is not created by default so you have to create it yourself when y
 | --- | --- | --- |
 | **add urls from class-based views** | ![class-based view url registration](images/url-from-class.png) | Register a new url that shows a class-based view by passing the new url, the class-based view (imported from `.views`) modified by the `.as_view()` method and a name that identifies the view (optional) |
 | **add urls from function-based views** | ![func-based view url registration](images/url-from-func.png) | Register a new url that shows a function-based view by passing the new url, the function-based view (imported from `.views`) and a name that identifies the view (optional) |
+
+#### `app/admin.py`
+
+| situation | what to do | description |
+| --- | --- | --- |
+| **models** | ![model registration](images/model-reg.png) | When you make a model that you want to be able to see and manipulate from the admin page, you need to register it with `admin.site.register(MyModel)` where `MyModel` is imported from `.models` |
