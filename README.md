@@ -9,8 +9,9 @@
 | 21.08 | [Django Setup](django_module/django_setup.md) |
 | 02.09 | [SQL Joins](SQL/joins.md), [ORM](django/orm.md) and [mixins](django/mixins.md) |
 
-### Extra exercises!
+### Extra resources
 
-|Regex | Solution |
+|Resource | Details |
 | --- | --- |
-| [Find a string](https://www.hackerrank.com/challenges/find-a-string/problem) | [Solution](https://github.com/fbw-p24-e01-assignments/tutoring/blob/main/extra_exercises/solution_find_a_string.py) |
+| [Django Cheatsheet](django/django_cheatsheet.md) | Cheatsheet for the Django files and how to use them |
+| [Find a string](https://www.hackerrank.com/challenges/find-a-string/problem) exercise from HackerRank | [Solution](https://github.com/fbw-p24-e01-assignments/tutoring/blob/main/extra_exercises/solution_find_a_string.py) |
