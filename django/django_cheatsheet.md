@@ -30,6 +30,8 @@ NB: This file is not created by default so you have to create it yourself when y
 
 #### `app/admin.py`
 
+NB: For this file to be helpful at all, you need to create a superuser in the terminal with the command `python manage.py createsuperuser`.
+
 | situation | what to do | description |
 | --- | --- | --- |
 | **models** | ![model registration](images/model-reg.png) | When you make a model that you want to be able to see and manipulate from the admin page, you need to register it with `admin.site.register(MyModel)` where `MyModel` is imported from `.models` |
