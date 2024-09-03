@@ -2,11 +2,26 @@
 
 #### When and where to use the Django files
 
-##### `settings.py`
+##### `project/settings.py`
 
 | situation | what to do | description |
 | --- | --- | --- |
 | **apps** | ![app registration](images/apps.png) | After creating an app with `django-admin startapp`, you need to register it as in the `INSTALLED_APP` list |
-| **databases** | ![database registration](images/db.png) | To connect to a database, you have to register its engine (`postgres_psycopg2`), name (`my_db`), user to be accessed as, password of the user, host (`'127.0.0.1'` for localhost) and port (optional, `'5432'` for postgres) |
+| **databases** | ![database registration](images/db.png) | To connect to a database, you have to register its engine (`postgres_psycopg2`), name (`my_db`), user to be accessed as, password of the user, host (`'127.0.0.1'` for localhost) and port (optional, `'5432'` for postgres) in the `default` dictionary of the `DATABASES` variable |
 | **static files** | ![static file dir registration](images/static.png) | If your static folder is outside of your app, you need to register the folder by adding the variable `STATICFILES_DIRS`, which is going to be a list containing a string path to the folder |
 | **templates** | ![templates registration](images/templates.png) | If you want to use templates, you have to register them in the `'DIRS'` key of the `TEMPLATES` variable as a path to the folder |
+
+##### `project/urls.py`
+
+| situation | what to do | description |
+| --- | --- | --- |
+| **include urls** from apps | ![url registration](images/proj_url.png) | Use the `include` function (imported from `django.urls`) to connect to other files that include urls |
+
+#### `app/urls.py`
+
+NB: This file is not created by default so you have to create it yourself when you make an app. You will also have to write in the `urlpatterns` list variable.
+
+| situation | what to do | description |
+| --- | --- | --- |
+| **make urls from class-based views** | ![class-based view url registration](images/url-from-class.png) | Register a new url that shows a class-based view by passing the new url, the class-based view (imported from `.views`) modified by the `.as_view()` method and a name that identifies the view (optional) |
+| **make urls from function-based views** | ![func-based view url registration](images/url-from-func.png) | Register a new url that shows a function-based view by passing the new url, the function-based view (imported from `.views`) and a name that identifies the view (optional) |
