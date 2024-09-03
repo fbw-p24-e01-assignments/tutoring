@@ -15,6 +15,8 @@
 
 | situation | what to do | description |
 | --- | --- | --- |
+| **add urls from class-based views** | ![class-based view url registration](images/proj_class_url.png) | Register a new url that shows a class-based view by passing the new url, the class-based view (imported from `app.views`) modified by the `.as_view()` method and a name that identifies the view (optional) |
+| **add urls from function-based views** | ![func-based view url registration](images/proj_func_url.png) | Register a new url that shows a function-based view by passing the new url, the function-based view (imported from `app.views`) and a name that identifies the view (optional) |
 | **include urls** from apps | ![url registration](images/proj_url.png) | Use the `include` function (imported from `django.urls`) to connect to other files that include urls |
 
 #### `app/urls.py`
@@ -23,5 +25,5 @@ NB: This file is not created by default so you have to create it yourself when y
 
 | situation | what to do | description |
 | --- | --- | --- |
-| **make urls from class-based views** | ![class-based view url registration](images/url-from-class.png) | Register a new url that shows a class-based view by passing the new url, the class-based view (imported from `.views`) modified by the `.as_view()` method and a name that identifies the view (optional) |
-| **make urls from function-based views** | ![func-based view url registration](images/url-from-func.png) | Register a new url that shows a function-based view by passing the new url, the function-based view (imported from `.views`) and a name that identifies the view (optional) |
+| **add urls from class-based views** | ![class-based view url registration](images/url-from-class.png) | Register a new url that shows a class-based view by passing the new url, the class-based view (imported from `.views`) modified by the `.as_view()` method and a name that identifies the view (optional) |
+| **add urls from function-based views** | ![func-based view url registration](images/url-from-func.png) | Register a new url that shows a function-based view by passing the new url, the function-based view (imported from `.views`) and a name that identifies the view (optional) |
