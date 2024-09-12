@@ -8,6 +8,7 @@ When and where to use the Django files.
 
 | situation | what to do | description |
 | --- | --- | --- |
+| __accounts__ | ![accounts default urls](images/accounts.png) | When making login and logout pages, add a path that includes `'django.contrib.auth.urls'` to have the default urls and tools for this purpose |
 | __apps__ | ![app registration](images/apps.png) | After creating an app with `django-admin startapp`, you need to register it as in the `INSTALLED_APP` list |
 | __databases:MongoDB__ | ![mongodb registration](images/mongodb.png) | To connect to MongoDB you have to register its engine (`djongo`, which you need to install with pip) and the `CLIENT`: a dictionary containing `'name'` of your cluster; `'host'` which is a string starting with _mongodb+srv_ that MongoDB provides when creating the cluster; `'username'` of your MongoDB account; `'password'` of your MongoDB account; and `'authMechanism'` with value `'SCRAM-SHA-1'` |
 | __databases:postgres__ | ![postgres registration](images/db.png) | To connect to postgres, you have to register its engine (`postgres_psycopg2` where by default you find `sqlite`), name (`my_db`), user to be accessed as, password of the user, host (`'127.0.0.1'` for localhost) and port (optional, `'5432'` for postgres) in the `default` dictionary of the `DATABASES` variable |
@@ -51,13 +52,15 @@ Where to import any built-in module we have used so far from.
 | `django.apps` | `AppConfig` |
 | `django.contrib` | `admin` |
 | `django.contrib.auth` | `get_user_model` |
+| `django.contrib.auth.forms` | `UserCreationForm` |
 | `django.core.asgi` | `get_asgi_application` |
 | `django.core.wsgi` | `get_wsgi_application` |
 | `django.db` | `models` |
 | `django.db.models` | `Model` |
-| `django.http` | `HttpResponse`<br/>`JsonResponse` |
-| `django.test` | `SimpleTestCase`<br/>`TestCase` |
-| `django.urls` | `path`<br/>`include`<br/>`resolve`<br/>`reverse`<br/>`reverse_lazy` |
-| `django.views.generic` | `DetailView`<br/>`FormView`<br/>`ListView`<br/>`TemplateView`<br/>`View` |
-| `django.views.generic.edit` | `CreateView`<br/>`DeleteView`<br/>`UpdateView` |
+| `django.http` | `HttpResponse` <br> `HttpResponseRedirect` <br> `JsonResponse` |
+| `django.shortcuts` | `redirect` <br> `render` |
+| `django.test` | `SimpleTestCase` <br> `TestCase` |
+| `django.urls` | `include` <br> `path` <br> `resolve` <br> `reverse` <br> `reverse_lazy` |
+| `django.views.generic` | `CreateView` <br> `DetailView` <br> `FormView` <br> `ListView` <br> `TemplateView` <br> `View` |
+| `django.views.generic.edit` | `DeleteView` <br> `UpdateView` |
 | `pathlib` | `Path` |
