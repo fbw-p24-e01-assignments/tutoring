@@ -13,5 +13,5 @@
 
 |Resource | Details |
 | --- | --- |
-| [Django Cheatsheet](django/django_cheatsheet.md) | Cheatsheet for the Django files and how to use them |
-| [Find a string](https://www.hackerrank.com/challenges/find-a-string/problem) exercise from HackerRank | [Solution](https://github.com/fbw-p24-e01-assignments/tutoring/blob/main/extra_exercises/solution_find_a_string.py) |
+| [Django Cheatsheet](django/django_cheatsheet.md) | Cheatsheet for Django |
+| Exercise "[Find a string](https://www.hackerrank.com/challenges/find-a-string/problem)" from HackerRank | [Solution](https://github.com/fbw-p24-e01-assignments/tutoring/blob/main/extra_exercises/solution_find_a_string.py) |
