@@ -13,6 +13,7 @@ When and where to use the Django files.
 | __databases:postgres__ | ![postgres registration](images/db.png) | To connect to postgres, you have to register its engine (`postgres_psycopg2` where by default you find `sqlite`), name (`my_db`), user to be accessed as, password of the user, host (`'127.0.0.1'` for localhost) and port (optional, `'5432'` for postgres) in the `default` dictionary of the `DATABASES` variable |
 | __login__ | ![login redirection](images/login_redirect.png) | When you're implementing a login page, add `LOGIN_REDIRECT_URL = 'view_name'` to your settings to automatically redirect to the chosen view after a successful login |
 | __logout__ | ![logout rederection](images/logout_redirect.png) | When your user logs out, add `LOGOUT_REDIRECT_URL = 'view_name'` to your settings to automatically redirect to the chosen view after a successful logout |
+| __middleware__ | ![custom middleware](images/custom-middleware.png) | To add a custom middleware to the `MIDDLEWARE` list, write its path as `app_name.file_name.function_or_class_name` |
 | __static files__ | ![static file dir registration](images/static.png) | If your static folder is outside of your app, you need to register the folder by adding the variable `STATICFILES_DIRS`, which is going to be a list containing a string path to the folder |
 | __templates__ | ![templates registration](images/templates.png) | If you want to use templates, you have to register them in the `'DIRS'` key of the `TEMPLATES` variable as a path to the folder |
 
@@ -54,8 +55,8 @@ Where to import any module from.
 | `django.core.wsgi` | `get_wsgi_application` |
 | `django.db` | `models` |
 | `django.db.models` | `Model` |
-| `django.test` | `SimpleTestCase`<br>`TestCase` |
-| `django.urls` | `path`<br>`include`<br>`reverse`<br>`reverse_lazy` |
-| `django.views.generic` | `DetailView`<br>`FormView`<br>`ListView`<br>`TemplateView`<br>`View` |
-| `django.views.generic.edit` | `CreateView`<br>`DeleteView`<br>`UpdateView` |
+| `django.test` | `SimpleTestCase``TestCase` |
+| `django.urls` | `path``include``reverse``reverse_lazy` |
+| `django.views.generic` | `DetailView``FormView``ListView``TemplateView``View` |
+| `django.views.generic.edit` | `CreateView``DeleteView``UpdateView` |
 | `pathlib` | `Path` |
