@@ -44,7 +44,7 @@ NB: For this file to be helpful at all, you need to create a superuser in the te
 
 ## Imports
 
-Where to import any module from.
+Where to import any built-in module we have used so far from.
 
 | import path | modules |
 | --- | --- |
@@ -55,8 +55,9 @@ Where to import any module from.
 | `django.core.wsgi` | `get_wsgi_application` |
 | `django.db` | `models` |
 | `django.db.models` | `Model` |
-| `django.test` | `SimpleTestCase``TestCase` |
-| `django.urls` | `path``include``reverse``reverse_lazy` |
-| `django.views.generic` | `DetailView``FormView``ListView``TemplateView``View` |
-| `django.views.generic.edit` | `CreateView``DeleteView``UpdateView` |
+| `django.http` | `HttpResponse`<br/>`JsonResponse` |
+| `django.test` | `SimpleTestCase`<br/>`TestCase` |
+| `django.urls` | `path`<br/>`include`<br/>`resolve`<br/>`reverse`<br/>`reverse_lazy` |
+| `django.views.generic` | `DetailView`<br/>`FormView`<br/>`ListView`<br/>`TemplateView`<br/>`View` |
+| `django.views.generic.edit` | `CreateView`<br/>`DeleteView`<br/>`UpdateView` |
 | `pathlib` | `Path` |
