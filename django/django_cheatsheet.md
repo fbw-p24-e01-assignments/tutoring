@@ -51,10 +51,12 @@ Where to import any built-in module we have used so far from.
 | import path | modules |
 | --- | --- |
 | `django.apps` | `AppConfig` |
+| `django.conf` | `settings` |
 | `django.contrib` | `admin` |
 | `django.contrib.auth` | `get_user_model` |
-| `django.contrib.auth.forms` | `UserCreationForm` |
-| `django.contrib.auth.models` | `AbstractUser` |
+| `django.contrib.auth.admin` | `UserAdmin` |
+| `django.contrib.auth.forms` | `UserChangeForm`  `UserCreationForm` |
+| `django.contrib.auth.models` | `AbstractUser`  `User` |
 | `django.core.asgi` | `get_asgi_application` |
 | `django.core.wsgi` | `get_wsgi_application` |
 | `django.db` | `models` |
