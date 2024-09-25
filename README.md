@@ -6,7 +6,7 @@
 | 12.06 | [Testing](testing/testing.md) |
 | 19.06 | [Monkey patching](monkeypatch_decorators/monkey_patching.md) and [decorators](monkeypatch_decorators/decorators.md) |
 | 08-09.07 | [PostgreSQL](SQL/SQL_notes.md) |
-| 21.08 | [Django Setup](django_module/django_setup.md) |
+| 21.08 | [Django Setup](django/django_setup.md) |
 | 02.09 | [SQL Joins](SQL/joins.md), [ORM](django/orm.md) and [mixins](django/mixins.md) |
 
 ### Extra resources

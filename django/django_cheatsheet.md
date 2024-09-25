@@ -16,6 +16,7 @@ When and where to use the Django files.
 | __login__ | ![login redirection](images/login_redirect.png) | When you're implementing a login page, add `LOGIN_REDIRECT_URL = 'view_name'` to your settings to automatically redirect to the chosen view after a successful login |
 | __logout__ | ![logout rederection](images/logout_redirect.png) | When your user logs out, add `LOGOUT_REDIRECT_URL = 'view_name'` to your settings to automatically redirect to the chosen view after a successful logout |
 | __middleware__ | ![custom middleware](images/custom-middleware.png) | To add a custom middleware to the `MIDDLEWARE` list, write its path as `app_name.file_name.function_or_class_name` |
+| __permissions__ | ![custom permissions](images/rest_framework.png) | To change the permissions on the project level, manipulate the `REST_FRAMEWORK` dictionary by changing the `"DEFAULT_PERMISSION_CLASSES"` list: in it, add `"rest_framework.permissions.<permission class>"`. Some of the permission classes are: `IsAuthenticated`, `IsAdminUser`, `IsAuthenticatedOrReadOnly`, `AllowAny`. |
 | __static files__ | ![static file dir registration](images/static.png) | If your static folder is outside of your app, you need to register the folder by adding the variable `STATICFILES_DIRS`, which is going to be a list containing a string path to the folder |
 | __templates__ | ![templates registration](images/templates.png) | If you want to use templates, you have to register them in the `'DIRS'` key of the `TEMPLATES` variable as a path to the folder |
 
@@ -23,6 +24,7 @@ When and where to use the Django files.
 
 | situation | what to do | description |
 | --- | --- | --- |
+| __api authorisation__ | ![api authorisation](images/api-auth-path.png) | To add a login menu in the admin view, add the following path to the project's urls `path('api-auth/', include('rest_framework.urls')),` |
 | __class-based views__ | ![class-based view url registration](images/proj_class_url.png) | Register a new url that shows a class-based view by passing the new url, the class-based view (imported from `app.views`) modified by the `.as_view()` method and a name that identifies the view (optional) |
 | __function-based views__ | ![func-based view url registration](images/proj_func_url.png) | Register a new url that shows a function-based view by passing the new url, the function-based view (imported from `app.views`) and a name that identifies the view (optional) |
 | __include urls__ from apps | ![url registration](images/proj_url.png) | Use the `include` function (imported from `django.urls`) to connect to other files that include urls |
