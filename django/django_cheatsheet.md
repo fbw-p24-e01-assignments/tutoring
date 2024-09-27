@@ -70,3 +70,6 @@ Where to import any built-in module we have used so far from.
 | `django.views.generic` | `CreateView`  `DetailView`  `FormView`  `ListView`  `TemplateView`  `View` |
 | `django.views.generic.edit` | `DeleteView`  `UpdateView` |
 | `pathlib` | `Path` |
+| `rest_framework` | `permissions`  `serializers` |
+| `rest_framework.permissions` | `BasePermission`  `IsAdminUser`  `AllowAny`  `IsAuthenticatedOrReadOnly`  `IsAuthenticated` |
+| `rest_framework.serializers` | `ModelSerializer` |
