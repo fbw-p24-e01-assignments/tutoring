@@ -50,8 +50,14 @@ NB: For this file to be helpful at all, you need to create a superuser in the te
 
 Where to import any built-in module we have used so far from.
 
+**Django:**
+
 | import path | modules |
 | --- | --- |
+| `aiohttp` | `ClientSession` |
+| `aiohttp.ClientSession` | `close()` |
+| `asyncio` | `get_event_loop(* lst : list)`  `run(function : async func)` |
+| `asyncio.get_event_loop()` | `close()`  `run_until_complete(function : async func)` |
 | `django.apps` | `AppConfig` |
 | `django.conf` | `settings` |
 | `django.contrib` | `admin` |
@@ -70,6 +76,6 @@ Where to import any built-in module we have used so far from.
 | `django.views.generic` | `CreateView`  `DetailView`  `FormView`  `ListView`  `TemplateView`  `View` |
 | `django.views.generic.edit` | `DeleteView`  `UpdateView` |
 | `pathlib` | `Path` |
-| `rest_framework` | `permissions`  `serializers` |
+| `rest_framework` | `permissions`  `serializers` `viewsets`  `routers` |
 | `rest_framework.permissions` | `BasePermission`  `IsAdminUser`  `AllowAny`  `IsAuthenticatedOrReadOnly`  `IsAuthenticated` |
 | `rest_framework.serializers` | `ModelSerializer` |
